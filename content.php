@@ -40,7 +40,7 @@ else : ?>
 			<div class="loop-entry-excerpt">
 				<?php the_content(); ?>
 
-				- <?php the_author(); ?> -
+				<p>- <?php the_author(); ?> -</p>
 				
 				<?php $comments = get_comments(array( 'post_id' => get_the_ID() )); ?>
 				<?php if (sizeof($comments) > 0) : ?>
@@ -48,7 +48,7 @@ else : ?>
 				<a href="<?php the_permalink(); ?>#comments" class="cmt">
 					<ul>
 					<?php foreach ($comments as $cmt) : ?>
-						<li>• <b style="font-weight: 600;"><?php echo(esc_html($cmt->comment_author)); ?></b>: <?php
+						<li class="cmt-li">• <b style="font-weight: 600;"><?php echo(esc_html($cmt->comment_author)); ?></b>: <?php
 							$cmt_html = apply_filters( 'comment_text', $cmt->comment_content, $cmt, array() );
 							$cmt_html = str_ireplace('<p>', '', $cmt_html);
 							$cmt_html = str_ireplace('</p>', '<br/>', $cmt_html);
