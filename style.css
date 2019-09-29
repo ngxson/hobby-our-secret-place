@@ -363,8 +363,13 @@ div.center-cropped img {
 }
 .nui-divider {
 	width: 100%;
-	height: 0.5px;
+	height: 1px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-color: #777;
+	background-color: #aaa;
 }
+a.cmt         {color:#666;}  /* unvisited link  */
+a.cmt:link    {color:#666;}  /* unvisited link  */
+a.cmt:visited {color:#666;}  /* visited link    */
+a.cmt:hover   {color:#666;}  /* mouse over link */
+a.cmt:active  {color:#666;}  /* selected link   */ 
