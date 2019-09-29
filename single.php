@@ -39,6 +39,7 @@ get_header(); ?>
 					<?php if ( get_theme_mod( 'wpex_post_author', true ) ) : ?>
 						<li><span class="fa fa-user"></span><?php the_author_posts_link(); ?></li>
 					<?php endif; ?>
+					<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>wp-admin/post.php?post=<?php the_ID(); ?>&action=edit"><span class="fa fa-edit"></span>Edit this post</a></li>
 				</ul>
 			</header>
 
