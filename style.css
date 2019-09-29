@@ -342,6 +342,7 @@ span.required { color: #F00 }
 @media only screen and (max-width: 500px) {
 	.container { max-width: 85%; padding-left: 0; padding-right: 0; }
 	.loop-entry { width: 100%; }
+	#infinite-wrap { width: 100% !important; }
 }
 
 /* MnC */
@@ -373,4 +374,21 @@ a.cmt:hover   {color:#666;}  /* mouse over link */
 a.cmt:active  {color:#666;}  /* selected link   */ 
 .cmt .cmt-li {
 	margin-top: 10px;
+}
+div.center-fit-container {
+	width: 100%;
+	max-height: 80vh;
+	line-height: 80vh;
+	text-align: center;
+	background-color: white;
+	overflow: hidden;
+	display: flex;
+}
+img.center-fit {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	vertical-align: middle;
 }

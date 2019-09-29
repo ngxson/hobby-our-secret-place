@@ -28,11 +28,10 @@
 			gutter       : 30,
 			columnWidth  : 280,
 			isAnimated   : true,
-			fitWidth: true,
 			animationOptions : {
-				duration : 300,
+				duration : 200,
 				easing   : 'easeInOutCirc',
-				queue    : false
+				queue    : true
 			} ,
 		} );
 	}
