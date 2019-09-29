@@ -102,7 +102,7 @@ blockquote.right { margin-left: 20px; text-align: left; margin-right: 0; width: 
 /* Body, Main & Commons
 ----------------------------------------------------------- */
 body { background: #f9f9f9 url("images/bg.png"); nowhitespace: afterproperty; font: 14px/1.8 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif; color: #444; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; }
-a { color: #14B694 }
+a { color: #2EA2CC }
 a:hover { color: #000; text-decoration: underline; }
 img { max-width: 100% }
 .entry-footer { clear: both; margin: 20px 0 0; }
@@ -170,7 +170,7 @@ a:focus { outline: 0 }
 #masthead { position: relative; margin-bottom: 30px; }
 .logo { float: left }
 .logo a { padding: 0px; margin: 0px; text-decoration: none; display: inline-block; color: #000 }
-.logo a:hover { color: #14B694; text-decoration: none; }
+.logo a:hover { color: #2EA2CC; text-decoration: none; }
 .logo img { display: block; max-width: 100%; }
 .logo h1, .logo h2 { font-size: 32px; text-transform: uppercase; margin: 0; line-height: 1.3em; font-weight: bold; }
 p.site-description { font-size: 12px; margin: 0; line-height: 1.35em; color: #444; }
@@ -189,7 +189,7 @@ p.site-description { font-size: 12px; margin: 0; line-height: 1.35em; color: #44
 .loop-entry { width: 280px; float: left; box-shadow: 0 1px 1px rgba(0,0,0,0.15); font-size: 12px; }
 .loop-entry { background: #fff; margin-bottom: 30px; }
 .loop-entry h2 { font-size: 14px; margin: 0 0 10px; line-height: 1.25em; }
-.loop-entry h2 a:hover { color: #14B694; }
+.loop-entry h2 a:hover { color: #2EA2CC; }
 .loop-entry-img-link { display: block; }
 .loop-entry-img-link img { display: block; width: 100%; }
 .loop-entry-img-link img:hover { opacity: 0.8; -moz-opacity: 0.8; -webkit-opacity: 0.8; }
@@ -268,7 +268,7 @@ ul.page-numbers li { display: block; float: left; margin: 0 3px 3px 0; text-alig
 ----------------------------------------------------------- */
 
 /*tagcloud*/
-.tagcloud a { display: block; float: left; font-size: 12px !important; line-height: 1.3em !important; background: #14B694; color: #fff; padding: 4px 10px; margin-right: 3px; margin-bottom: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
+.tagcloud a { display: block; float: left; font-size: 12px !important; line-height: 1.3em !important; background: #2EA2CC; color: #fff; padding: 4px 10px; margin-right: 3px; margin-bottom: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
 .tagcloud a:hover { text-decoration: none; color: #fff; background: #444; }
 
 /*calendar*/
@@ -330,7 +330,7 @@ span.required { color: #F00 }
 	.page .container-right { padding-left: 0; max-width: 100%; width: 100%; min-width: 100%; }
 	#toggle-wrap { display: none; }
 	#toggle-wrap.visible { display: block; }
-	#toggle-btn { display: block; background: #14B694; color: #fff; height: 35px; width: 35px; line-height: 35px; text-align: center; margin-bottom: 30px; font-size: 14px; }
+	#toggle-btn { display: block; background: #2EA2CC; color: #fff; height: 35px; width: 35px; line-height: 35px; text-align: center; margin-bottom: 30px; font-size: 14px; }
 	#toggle-btn:hover { text-decoration: none; opacity: 0.8; }
 	.dropdown-menu:before { display: none; }
 	.single-nav { display: none; }
