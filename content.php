@@ -36,15 +36,23 @@ else : ?>
 			</a>
 		<?php } ?>
 		<div class="loop-entry-details">
-			<header><h2><a href="<?php the_permalink(); ?>" title="<?php wpex_esc_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2></header>
+			<header style="margin-bottom: 20px;"><h2><a href="<?php the_permalink(); ?>" title="<?php wpex_esc_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2></header>
 			<div class="loop-entry-excerpt">
 				<?php the_content(); ?>
+
+				- <?php the_author(); ?> -
 				
 				<?php $comments = get_comments(array( 'post_id' => get_the_ID() )); ?>
 				<?php if (sizeof($comments) > 0) : ?>
+				<div class="nui-divider"></div>
 				<ul>
 				<?php foreach ($comments as $cmt) : ?>
-					<li>• <b style="font-weight: 600;"><?php echo(esc_html($cmt->comment_author)); ?></b>: <?php echo(esc_html($cmt->comment_content)); ?></li>
+					<li>• <b style="font-weight: 600;"><?php echo(esc_html($cmt->comment_author)); ?></b>: <?php
+						$cmt_html = apply_filters( 'comment_text', $cmt->comment_content, $cmt, array() );
+						$cmt_html = str_ireplace('<p>', '', $cmt_html);
+						$cmt_html = str_ireplace('</p>', '<br/>', $cmt_html);
+						echo($cmt_html);
+					?></li>
 				<?php endforeach; ?>
 				</ul>
 				<?php endif; ?>
