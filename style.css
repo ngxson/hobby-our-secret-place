@@ -392,3 +392,6 @@ img.center-fit {
 	object-fit: contain;
 	vertical-align: middle;
 }
+.grid {
+	margin: 0 auto;
+}
