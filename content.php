@@ -42,7 +42,10 @@ else : ?>
 
 				<p>- <?php the_author(); ?> -</p>
 				
-				<?php $comments = get_comments(array( 'post_id' => get_the_ID() )); ?>
+				<?php
+					$comments = get_comments(array( 'post_id' => get_the_ID() ));
+					$comments = array_reverse($comments);
+				?>
 				<?php if (sizeof($comments) > 0) : ?>
 				<div class="nui-divider"></div>
 				<a href="<?php the_permalink(); ?>#comments" class="cmt">

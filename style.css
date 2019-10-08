@@ -49,7 +49,8 @@ input[type=search] { font-size: 12px; font-weight: normal; }
 input[type="search"]:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, textarea:focus { outline: none; }
 
 /*buttons*/
-button, input[type="button"], input[type="submit"], input[type="submit"] { font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; cursor: pointer; display: inline-block; background: #F5F5F5 ;background: -webkit-gradient(linear, left bottom, left top, from(#F5F5F5), to(#FFF)), #FFF;background: -moz-linear-gradient(90deg, #F5F5F5 0%, #FFF 100%), #FFF;border: 1px solid #ccc;color: #444;font-weight: bold;line-height: 1.4em;padding: 8px 10px;width: auto; border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+button, input[type="button"], input[type="submit"], input[type="submit"], .edit-link { font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: 12px; cursor: pointer; display: inline-block; background: #F5F5F5 ;background: -webkit-gradient(linear, left bottom, left top, from(#F5F5F5), to(#FFF)), #FFF;background: -moz-linear-gradient(90deg, #F5F5F5 0%, #FFF 100%), #FFF;border: 1px solid #ccc;color: #444;font-weight: bold;line-height: 1.4em;padding: 8px 10px;width: auto; border-radius: 3px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+.edit-link { padding: 4px 4px; }
 button:hover, input[type="button"]:hover, input[type="submit"]:hover, #commentsbox input[type="submit"]:hover { text-decoration: none; border-color: #aaa; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
 button:active, input[type="button"]:active, input[type="submit"]:active, #commentsbox input[type="submit"]:active { background: #fff; }
 

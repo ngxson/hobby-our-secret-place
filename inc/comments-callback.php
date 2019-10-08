@@ -25,7 +25,7 @@ function wpex_comment( $comment, $args, $depth ) {
 		// Display trackbacks differently than normal comments.
 	?>
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
-		<p><?php _e( 'Pingback:', 'pronto' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'pronto' ), '<span class="ping-meta"><span class="edit-link">', '</span></span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'pronto' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'pronto' ), '<span class="ping-meta"><span class="post-tags">', '</span></span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -50,7 +50,7 @@ function wpex_comment( $comment, $args, $depth ) {
                             get_comment_time( 'c' ),
                             sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'pronto' ), get_comment_date(), get_comment_time() )
                         );
-                        edit_comment_link( __( 'Edit', 'pronto' ), '<span class="edit-link">', '<span>' );
+                        edit_comment_link( __( 'Edit', 'pronto' ), '&nbsp;&nbsp;&nbsp;<span class="edit-link">', '<span>' );
                     ?>
                     </div><!-- .comment-date -->
                 </header><!-- .comment-meta -->
