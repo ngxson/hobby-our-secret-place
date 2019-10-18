@@ -8,6 +8,7 @@
  * @since     1.0
  */
 
+if (isset($_GET['infscroll'])) die();
 get_header(); ?>
 
 	<div id="primary" class="content-area span_16 col clr-margin">

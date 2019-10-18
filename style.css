@@ -368,6 +368,12 @@ div.center-cropped img {
 	height: 1px;
 	background-color: #aaa;
 }
+.nui-loading {
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	display: block;
+}
 a.cmt         {color:#666;}  /* unvisited link  */
 a.cmt:link    {color:#666;}  /* unvisited link  */
 a.cmt:visited {color:#666;}  /* visited link    */
