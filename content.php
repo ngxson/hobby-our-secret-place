@@ -20,7 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( is_singular() && is_main_query() ) :
 
 	if ( has_post_thumbnail() && get_theme_mod( 'wpex_blog_post_thumb', true ) ) : ?>
-		<div id="post-thumbnail" class="center-fit-container"><?php the_post_thumbnail( 'wpex-post', array('class' => 'center-fit') ); ?></div>
+		<a href="<?php echo(get_the_post_thumbnail_url(null, 'full'));?>" target="_blank">
+			<div id="post-thumbnail" class="center-fit-container"><?php the_post_thumbnail( 'wpex-post', array('class' => 'center-fit') ); ?></div>
+		</a>
 	<?php endif; ?>
 
 <?php
