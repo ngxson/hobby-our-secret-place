@@ -273,7 +273,7 @@ ul.page-numbers li { display: block; float: left; margin: 0 3px 3px 0; text-alig
 ----------------------------------------------------------- */
 
 /*tagcloud*/
-.tagcloud a { display: block; float: left; font-size: 12px !important; line-height: 1.3em !important; background: #2EA2CC; color: #fff; padding: 4px 10px; margin-right: 3px; margin-bottom: 3px; box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
+.tagcloud a { display: block; float: left; font-size: 12px !important; line-height: 1.3em !important;  color: rgb(36, 132, 167); padding: 4px 10px; margin-right: 3px; margin-bottom: 3px; border: 1px solid rgb(36, 132, 167); font-weight: bold; }
 .tagcloud a:hover { text-decoration: none; color: #fff; background: #444; }
 
 /*calendar*/
