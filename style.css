@@ -402,3 +402,20 @@ img.center-fit {
 .grid {
 	margin: 0 auto;
 }
+.loop-entry-excerpt .wp-block-audio audio {
+	width: 250px !important;
+	min-width: 250px !important;
+}
+.loop-entry-excerpt .wp-block-embed__wrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+.loop-entry-excerpt .wp-block-embed__wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
